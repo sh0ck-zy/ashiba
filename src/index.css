@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, #D4B982 0.5px, transparent 0.5px),
+      linear-gradient(to bottom, #D4B982 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+    opacity: 0.1;
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #000000, #D4B982);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-zen {
+    background-color: #F5F0E6;
+  }
+
+  .border-zen {
+    border-color: #D4B982;
+  }
+
+  .text-zen-gold {
+    color: #D4B982;
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-zen text-gray-900;
+  }
+}
